@@ -1,0 +1,82 @@
+html,
+body
+	height 100%
+
+
+$bg
+	background main
+	height 100%
+	.content
+		width 95%
+		align(both)
+		text-align center
+
+// Background Header
+.bg-header
+	background-blend-mode overlay
+	background rgba(27, 27, 27, 0.59)
+	background-repeat no-repeat
+	background-size cover
+	background-position center center
+
+// Header home
+.header-site
+	@extends $bg
+	h1,h2
+		color: sec
+		text-align center
+	.site-title
+		font-size rem(60px)
+		line-height 1
+		margin-top -80px
+		display block
+		.site-logo
+			width 100%
+			max-width 500px
+		+above(cut)
+			margin-bottom 0
+			font-size rem(100px)
+	.site-description
+		font-size rem(17px)
+		display block
+		margin rem(30px) 0
+		+above(cut)
+			font-size rem(25px)
+		.site-sub-description
+			font-size rem(12px)
+			+above(cut)
+				font-size rem(16)
+
+// Header Post
+.header-post
+	@extends $bg
+	.subheader
+		display table
+		padding 20px
+		a
+			border 2px solid sec
+			border-radius 20px
+			padding 0 10px
+			+above(cut)
+				padding 0 10px
+
+	.date
+		mainFont(300)
+		font-size rem(16px)
+	h1
+		text-transform uppercase
+		font-size rem(30px)
+		margin 0 0 30px
+		+above(cut)
+			font-size rem(40px)
+	.subtitle
+		mainFont(300)
+		font-size rem(20px)
+	h1,.subtitle, .date
+		color sec
+		text-align center
+	p
+		color sec
+		text-decoration none
+		mainFont(300)
+		font-size rem(18px)

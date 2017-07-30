@@ -1,0 +1,50 @@
+# Site settings
+title: arDevy.com
+description: مدونة من المبرمجين إلى المبرمجين
+header_bg: "https://static1.squarespace.com/static/577e7eaf579fb374641b7d15/t/578540786b8f5b322dec94d8/1468350603522/home1.png"
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://localhost:3000" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
+timezone: Africa/Casablanca
+
+# User settings
+username: ياسين سدراني
+user_description: مطور و مصمم تطبيقات الويب, و مهتم بفلسفة المصادر المفتوحة.
+user_title: Full-stack web developer
+email: sed.yassine@live.fr
+twitter_username: lorem_ipsum
+github_username:  lorem_ipsum
+gplus_username:  lorem_ipsum
+disqus_username: ardevy
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: /:title/
+
+
+# html minify
+compress_html:
+  clippings: all
+  comments: all
+  endings: []
+  profile: false
+
+# Links to include in menu navigation
+# For external links add external: true
+links:
+  - title: الرئيسية
+    url: /
+    icon: "fa fa-home"
+  - title: الدورات
+    url: /series
+    icon: "fa fa-graduation-cap"
+  - title: التصنيفات
+    url: /tags
+    icon: "fa fa-tags"
+  - title: من أنا
+    url: /about
+    icon: "fa fa-question-circle"
+
+# exclude my node related stuff
+gems: ['kramdown']
+exclude: ['config.ru', 'Gemfile', 'Gemfile.lock', 'vendor', 'Procfile', 'Rakefile']
