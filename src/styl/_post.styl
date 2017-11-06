@@ -1,5 +1,8 @@
 .post-content
     padding rem(40px) 0
+    em
+      color #7d7d7d
+      font-size 1rem
     img
         max-width 250px
         margin rem(30px) auto
@@ -14,6 +17,24 @@
         letter-spacing 0.01rem
         +above(cut)
             font-size rem(20px)
+
+    ul, ol
+      &:before
+        display none !important
+      &:after
+        display none !important
+      p
+        line-height 1
+        margin auto
+        font-size 1.2rem
+        &:before
+          display none !important
+        &:after
+          display none !important
+
+      li
+        margin-bottom 1.4rem
+
     p,li
         color texts
         code
